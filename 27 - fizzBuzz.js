@@ -18,3 +18,8 @@ const fizzBuzz = (begin, end) => {
 }
 
 export default fizzBuzz;
+
+console.log(fizzBuzz(5, 15)) // Buzz Fizz 7 8 Fizz Buzz 11 Fizz 13 14 FizzBuzz 
+console.log(fizzBuzz(25, 30)) // Buzz 26 Fizz 28 29 FizzBuzz
+console.log(fizzBuzz()) // ...
+console.log(fizzBuzz(15, 16)) // FizzBuzz 16
