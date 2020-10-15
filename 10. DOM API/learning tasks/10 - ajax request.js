@@ -13,8 +13,6 @@ If the list is empty, return 'Nothing'
 </ul>
 */
 
-///// WORKING SHOWCASE https://web-js-dom-ajax-1939421.evaluator6-3.hexlet.io/
-
 ////// JS REALIZATION
 const forms = document.querySelectorAll(".form-control");
 forms.forEach((form) => {
