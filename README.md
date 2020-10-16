@@ -66,3 +66,10 @@ Object Oriented Programming in JavaScript: functions as objects, this and bind, 
 Event loops, asynchronous code execution, errors catching, parallel tasks execution, setTimeout-setInterval, promises and Promise.all, async/await.
 
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/9.%20asynchronous%20programming/learning%20tasks)
+
+[🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/9.%20asynchronous%20programming/challenges)
+
+### 10. [DOM API](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/10.%20DOM%20API)
+DOM navigation and manipulation, HTML changes via JS, event listeners and stages, formData, AJAX-requests and fetch.
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/10.%20DOM%20API/learning%20tasks)
