@@ -73,3 +73,5 @@ Event loops, asynchronous code execution, errors catching, parallel tasks execut
 DOM navigation and manipulation, HTML changes via JS, event listeners and stages, formData, AJAX-requests and fetch.
 
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/10.%20DOM%20API/learning%20tasks)
+
+[🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/10.%20DOM%20API/challenges)
