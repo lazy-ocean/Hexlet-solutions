@@ -4,7 +4,7 @@ All tasks are a courtesy of a Hexlet team, all solutions are entirely mine.
 
 📚 - learning tasks
 
-🚀 - advanced and more difficult challenges
+🚀 - advanced and more difficult challenges (not all modules have challenges)
 
 ## Course contents
 ### 1. [Introduction to JavaScript](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/1.%20introduction%20to%20javascript)
@@ -75,3 +75,8 @@ DOM navigation and manipulation, HTML changes via JS, event listeners and stages
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/10.%20DOM%20API/learning%20tasks)
 
 [🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/10.%20DOM%20API/challenges)
+
+### 10. [Regular expressions](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/11.%20Regular%20expressions)
+All about regular expressions: classes and groups, position symbols, alternation, backreference, lookarounds, flags, etc.
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/11.%20Regular%20expressions/learning%20tasks)
