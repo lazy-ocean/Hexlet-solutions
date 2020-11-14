@@ -1,3 +1,19 @@
+/* drunkard.js
+Drunkard is a card game in which the winner is the player who got all the cards. 
+Rules:
+--- Two players with equal numbers of cards 
+--- Players couldn't see their cards, just the stack of it backs up.
+--- At the same time players take out and show the first cards of their stacks: the player whose card is "bigger", takes both and puts them at the end of her stack (own card first).
+--- If one player has got no more cards, the opponent wins.
+--- If the cards are equal, they're thrown out of the game.
+--- If both players has no more cards, it is a draw, 'botwa'.
+--- Game could be played a long-long time so mind the rounds count.
+
+Write a Drunkard class that has run() method for the game: it takes two arrays of cards for both players and runs the game until the draw, one player won or until 100 rounds reached.
+When one of the players wins, return "First/Second player. Round: <#>"
+If it is the draw or 100th round has passed by, return "Botwa!"
+*/
+
 class Drunkard {
   constructor() {
     this.rounds = 1;
