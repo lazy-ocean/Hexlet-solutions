@@ -1,17 +1,17 @@
 /* formValidation.js
-Using yup library (https://github.com/jquense/yup#usage) write validation of the user registration form.
+Using yup library (https://github.com/jquense/yup#usage) write validation of the bootstrap's user registration form.
+Use axios for the POST response and onChange library to check all the changes.
 */
+
+//// SHOWCASE ON CODEPEN - https://codepen.io/lazy_ocean/pen/Bazgjjv
 
 import * as y from "yup";
 import onChange from "on-change";
 import axios from "axios";
-
-// NOTE: because of incompatability between commonjs and esm
 const yup = !y.object ? y.default : y;
 
-//// PRESET PARAMETERS
-
 const schema = yup.object().shape({
+  name: yup.string().required(),
   email: yup.string().required().email(),
   password: yup.string().required().min(6),
   passwordConfirmation: yup
@@ -23,12 +23,11 @@ const schema = yup.object().shape({
     ),
 });
 
-//// JS VALIDATION
-const run = () => {
+// BEGIN (write your solution here)
+const run = (() => {
   const form = document.querySelector("form");
   const button = document.querySelector(".btn");
   const container = document.querySelector(".container");
-  const formElements = form.elements;
 
   const state = {
     registrationForm: {
@@ -48,15 +47,12 @@ const run = () => {
     let keys = Object.keys(state.registrationForm.data);
     if (state.registrationForm.state === "invalid") {
       keys.forEach((key) => {
-        if (errors) {
-          errors[key]
-            ? form.elements[key].classList.add("is-invalid")
-            : form.elements[key].classList.remove("is-invalid");
-        } else {
-          form.elements[key].classList.remove("is-invalid");
-        }
+        errors && errors[key]
+          ? form.elements[key].classList.add("is-invalid")
+          : form.elements[key].classList.remove("is-invalid");
       });
     } else {
+      keys.forEach((key) => form.elements[key].classList.remove("is-invalid"));
       button.disabled = false;
     }
   };
@@ -64,9 +60,10 @@ const run = () => {
   const watchedState = onChange(state, (path, value) => {
     let arr = path.split(".");
     let item = arr[arr.length - 1];
-    if (state.registrationForm.state === "invalid") {
-      submitHandler(item);
-      render();
+    submitHandler(item);
+    render();
+    if (item === "password") {
+      submitHandler("passwordConfirmation");
     }
   });
 
@@ -86,8 +83,8 @@ const run = () => {
         console.log(err);
       });
   });
-
-  formElements.forEach((element) => {
+  const formElements = form.elements;
+  [...formElements].forEach((element) => {
     element.addEventListener("input", (e) => {
       let type = element.name;
       watchedState.registrationForm.data[type] = e.target.value;
@@ -95,16 +92,27 @@ const run = () => {
   });
 
   const submitHandler = (item) => {
+    schema
+      .validateAt(`${item}`, state.registrationForm.data)
+      .then(() => {
+        console.log("m");
+        state.registrationForm.errors[item] = null;
+        validateAll();
+      })
+      .catch((err) => {
+        state.registrationForm.errors[item] = err.errors;
+      })
+      .finally(() => {
+        render();
+      });
+  };
+
+  const validateAll = () => {
     try {
       schema.validateSync(state.registrationForm.data, { abortEarly: false });
-      state.registrationForm.errors = null;
       state.registrationForm.state = "valid";
     } catch (err) {
-      let errs = err.inner;
-      let obj = errs.reduce((acc, err) => {
-        return { ...acc, [err.path]: err.message };
-      }, {});
-      state.registrationForm.errors = obj;
+      console.log("e");
     }
   };
-};
+})();
