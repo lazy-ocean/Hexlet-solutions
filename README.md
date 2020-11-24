@@ -83,20 +83,32 @@ Event loops, asynchronous code execution, errors catching, parallel tasks execut
 
 DOM navigation and manipulation, HTML changes via JS, event listeners and stages, formData, AJAX-requests and fetch.
 
+Showcases of works from this module could be found on [Codepen](https://codepen.io/lazy_ocean).
+
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/10.%20DOM%20API/learning%20tasks)
 
 [🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/10.%20DOM%20API/challenges)
 
-### 10. [Regular expressions](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/11.%20Regular%20expressions)
+### 11. [Regular expressions](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/11.%20Regular%20expressions)
 
 All about regular expressions: classes and groups, position symbols, alternation, backreference, lookarounds, flags, etc.
 
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/11.%20Regular%20expressions/learning%20tasks)
 
-### 11. [OOD](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/12.%20OOD)
+### 12. [OOD](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/12.%20OOD)
 
 Object Oriented Design in JavaScript: Proxy, development patterns, how to use OOP in the right way and when there's no use for it, beware of setters and excessive use of abstractions.
 
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/12.%20OOD/learning%20tasks)
 
 [🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/12.%20OOD/challenges)
+
+### 13. [Frontend architecture](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/13.%20Frontend%20architecture)
+
+Fundamental principals of frontend development: MVC (Model-View-Controller), working with allocated state, storing application data, errors, data normalization, forms operation, i18n-libraries.
+
+Showcases of works from this module could be found on [Codepen](https://codepen.io/lazy_ocean).
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/13.%20Frontend%20architecture/learning%20tasks)
+
+[🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/13.%20Frontend%20architecture/challenges)
