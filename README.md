@@ -112,3 +112,9 @@ Showcases of works from this module could be found on [Codepen](https://codepen.
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/13.%20Frontend%20architecture/learning%20tasks)
 
 [🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/13.%20Frontend%20architecture/challenges)
+
+### 14. [Advanced testing](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/14.%20Advanced%20testing)
+
+Part 2 of the automated testing learning module: exploring more Jest functions, work with fixtures, testing asynchronous code, dependency inversion, stubbing, monkey patching with [nock](https://github.com/nock/nock) and mocking functions.
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/14.%20Advanced%20testing/learning%20tasks)
