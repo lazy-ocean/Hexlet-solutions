@@ -118,3 +118,11 @@ Showcases of works from this module could be found on [Codepen](https://codepen.
 Part 2 of the automated testing learning module: exploring more Jest functions, work with fixtures, testing asynchronous code, dependency inversion, stubbing, monkey patching with [nock](https://github.com/nock/nock) and mocking functions.
 
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/14.%20Advanced%20testing/learning%20tasks)
+
+### 15. [Polymorphism](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/15.%20Polymorphism)
+
+Diving deeper into OOP: distinguishing different types of polymorphism and its tasks (parametric, dispatch by key, by file name, duck typing), dependency inversion, patterns (null object pattern, strategy, fabric, adapter, decorator, state).
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/15.%20Polymorphism/learning%20tasks)
+
+[🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/15.%20Polymorphism/challenges)
