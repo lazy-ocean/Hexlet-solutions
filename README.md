@@ -126,3 +126,9 @@ Diving deeper into OOP: distinguishing different types of polymorphism and its t
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/15.%20Polymorphism/learning%20tasks)
 
 [🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/15.%20Polymorphism/challenges)
+
+### 16. [Classes](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/16.%20Classes)
+
+Diving deeper into JS classes: inheritance (_extends_), late binding, template methods, method overriding, LISP, custom error classes and Error extending, **super**.
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/16.%20Classes/learning%20tasks)
