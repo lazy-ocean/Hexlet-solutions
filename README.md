@@ -132,3 +132,13 @@ Diving deeper into OOP: distinguishing different types of polymorphism and its t
 Diving deeper into JS classes: inheritance (_extends_), late binding, template methods, method overriding, LISP, custom error classes and Error extending, **super**.
 
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/16.%20Classes/learning%20tasks)
+
+### 17. [React JS](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/17.%20React)
+
+All about [React](https://reactjs.org/): creating components step by step and from the easiest ones to complex ones with backend integration. Class components and functional components, JSX, props, children, stateless and stateful components, events, forms, immutability, nested components, Virtual DOM, refs and component lifecycle. Lots of practice!
+
+Showcases of works from this module could be found on [Codepen](https://codepen.io/lazy_ocean).
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/17.%20React/learning%20tasks)
+
+[🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/17.%20React/challenges)
