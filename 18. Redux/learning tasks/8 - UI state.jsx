@@ -2,6 +2,8 @@
 Modify Tasks component the way that on click it would change its theme from dark to light.
 */
 
+///////////////////// SHOWCASE ON CODEPEN: https://codepen.io/lazy_ocean/pen/yLVYXJo
+
 import React from "react";
 import { connect } from "react-redux";
 import cn from "classnames";
