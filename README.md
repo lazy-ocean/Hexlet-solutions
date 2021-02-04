@@ -142,3 +142,11 @@ Showcases of works from this module could be found on [Codepen](https://codepen.
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/17.%20React/learning%20tasks)
 
 [🚀 Challenges](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/17.%20React/challenges)
+
+### 18. [Redux](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/18.%20Redux)
+
+Learning to manage state of React components with [Redux](https://redux.js.org/): Redux Actions, react-redux, reducers, Reselect library, Redux Forms, UI State in Redux and a bit of middlewares.
+
+Showcases of works from this module could be found on [Codepen](https://codepen.io/lazy_ocean).
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/18.%20Redux/learning%20tasks)
