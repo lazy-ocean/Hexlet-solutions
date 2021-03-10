@@ -1,0 +1,62 @@
+<!--
+1) app.pug - pug layout
+-->
+doctype html
+html
+  head
+    title HexletExercise
+    link(rel='stylesheet' href='/assets/bootstrap/dist/css/bootstrap.css')
+  body
+    .container
+      block content
+
+<!--
+2) index.pug - main page
+-->
+block content
+  h3 links
+  ul
+    li
+      a(href='/posts') List
+    li
+      a(href='/posts/new') New
+
+<!--
+3) posts/index.pug - page with posts
+-->
+block content
+  div
+    a(href='/') Main page
+  table(class='table table-bordered')
+    tbody
+      tr
+        th Title
+      each post in posts
+        tr
+          td
+            a(href=`/posts/${post.id}`) #{post.title}
+  a(href="/posts/new") Add new post
+
+<!--
+4) posts/new.pug - new post form
+-->
+block content
+  form(action="/posts" method='post')
+    div(class='form-group')
+      label(for='titleInput') Title
+        sup *
+      input(name='title' id='titleInput')
+    div(class='form-group')
+      label(for='bodyInput') Body
+        sup *
+      textarea(name='body' id='bodyInput' rows='10')
+    input(type='submit' value='Add new post' class="btn btn-primary")
+
+<!--
+5) posts/show.pug - post page
+-->
+block content
+  div
+    a(href='/') Main page
+  p #{title}
+  p #{body}
