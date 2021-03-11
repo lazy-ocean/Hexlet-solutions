@@ -1,0 +1,93 @@
+<!--
+1) app.pug - pug layout
+-->
+doctype html
+html
+  head
+    title HexletExercise
+    link(rel='stylesheet' href='/assets/bootstrap/dist/css/bootstrap.css')
+  body
+    .container
+      block content
+
+<!--
+2) index.pug - main page
+-->
+block content
+  h3 links
+  ul
+    li
+      a(href='/posts') List
+    li
+      a(href='/posts/new') New
+
+<!--
+3) posts/index.pug - page with posts
+-->
+block content
+  div
+  table(class='table table-bordered')
+    tbody
+      tr
+        th Title
+      each post in posts
+        tr
+          td
+            a(href=`/posts/${post.id}` class="btn btn-link") #{post.title}
+            div
+              form.form-inline.d-inline-block(action=`/posts/${post.id}?_method=DELETE` method='post')
+                button.btn.btn-link(type='submit') Delete post
+              a(href=`/posts/${post.id}/edit` class="btn btn-link") Edit post
+  a(href="/posts/new") Add new post
+
+<!--
+4) posts/_form.pug - form util component
+-->
+if Object.keys(errors).length > 0
+  .alert.alert-default
+    for key in Object.keys(errors)
+      div= errors[key]
+.row.form-group
+  .col-sm
+    label.col-form-label
+      | Title
+      sup *
+    input.form-control(name='title' value=form.title)
+.row.form-group
+  .col-sm
+    label.col-form-label
+      | Body
+      sup *
+    textarea.form-control(rows=10 name='body')= form.body
+.form-group
+  button.btn.btn-primary.btn-block(type='submit') Save
+
+<!--
+5) posts/new.pug - add new post form
+-->
+block content
+  .row.mt-3
+    .col-sm-6.mx-auto
+      h3.text-xs-center New Blog Post
+      form(action='/posts' method='post')
+        include _form.pug
+
+<!--
+6) posts/show.pug - post page
+-->
+block content
+  div
+    a(href='/') Main page
+  p #{title}
+  p #{body}
+
+
+<!--
+7) posts/edit.pug - editing form
+-->
+block content
+  .row.mt-3
+    .col-sm-6.mx-auto
+      h3.text-xs-center Edit post
+      form(action=`/posts/${form.id}?_method=PATCH` method='post')
+        include _form.pug
