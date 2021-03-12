@@ -150,3 +150,15 @@ Learning to manage state of React components with [Redux](https://redux.js.org/)
 Showcases of works from this module could be found on [Codepen](https://codepen.io/lazy_ocean).
 
 [📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/18.%20Redux/learning%20tasks)
+
+### 19. [HTTP Server](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/19.%20HTTP%20Server)
+
+Setting up a simple HTML server using Node.js. Use cURL, nodemon, work with the main methods and response body and types, set up basic routing.
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/19.%20HTTP%20Server/learning%20tasks)
+
+### 20. [Express](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/20.%20Express)
+
+Setting up a web-app on [Express](https://expressjs.com/): writing and using middlewares, managing routing, logging, testing, learning REST-arcitecture, working with sessions, autorization and authentification.
+
+[📚 Tasks](https://github.com/lazy-ocean/Hexlet-solutions/tree/master/20.%20Express/learning%20tasks)
